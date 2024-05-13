@@ -80,7 +80,7 @@ header {
     height: 90vh;
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(..//img/full_car.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
     background-position: center center;
 }
 .btn {
