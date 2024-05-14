@@ -377,6 +377,10 @@ header {
 /* CONFIGURACIÓN DE LA SECCIÓN ACERCA DE */
 .about {
     padding: 50px 0;
+    display: flex; /* Agrega flexbox */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Centra el texto */
 }
 
 .about .container {
@@ -388,7 +392,6 @@ header {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
-    text-align: center; /* Centra el texto */
 }
 
 .about p {
@@ -397,4 +400,18 @@ header {
     color: #666;
     margin-bottom: 20px;
     text-align: justify; /* Justifica el texto */
+}
+
+/* Media queries para pantallas más grandes, como computadoras */
+@media screen and (min-width: 768px) {
+    .about {
+       margin: 40px;
+    }
+}
+
+/* Media queries para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .about {
+        margin: 40px;
+    }
 }
