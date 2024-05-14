@@ -28,7 +28,11 @@ h3 {
 p {
     font-size: 1.25em;
 }
-
+/* CONFIGURACIÓN DEL FOOTER */
+footer {
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+}
 
 /* Inicio Navbar style */
 
@@ -121,3 +125,9 @@ header {
     transition: 0.4s;
     background-color: rgb(202, 0, 0);
 }
+.mensaje .containermensaje{
+    text-align: center;
+    padding: 100px 12px;
+    margin: 30px;
+}
+
