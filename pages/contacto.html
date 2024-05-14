@@ -35,10 +35,37 @@
           </nav>
       </header>
         <main>
-
+            <!-- Sección de Formulario de Contacto -->
+    <<section class="formulario">
+        <div class="container">
+            <!-- Banner -->
+            <div class="banner">
+                ¿Te interesa? ¡Contáctanos!
+            </div>
+            <!-- Formulario de contacto -->
+            <form action="submit.php" method="post">
+                <div class="input-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
         </main>
         <footer>
-            <!-- place footer here -->
+            <div class="container">
+                <!-- Texto de derechos de autor -->
+                <p>&copy; Copiright Dante Vatani, Primera entrega. 2024</p>
+            </div>
         </footer>
         <!-- Bootstrap JavaScript Libraries -->
         <script
