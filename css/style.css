@@ -150,3 +150,76 @@ header {
 .intromodelos h2 {
     color: #ffcc00; /* Cambia esto al color que prefieras */
 }
+.banner {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.yeyouno, .yeyodos, .yeyotres {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: calc(33.33% - 20px); /* Espacio entre elementos */
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Racing Sans One', sans-serif; /* Cambio de fuente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Añadir padding interno */
+    height: 600px; /* Altura para los contenedores */
+    overflow: hidden; /* Para ocultar partes de la imagen que se desborden */
+}
+
+.yeyouno img, .yeyodos img, .yeyotres img {
+    width: 100%;
+    height: auto; /* Ajusta la altura de las imágenes automáticamente */
+    object-fit: cover;
+    border-radius: 10px; /* Redondear los bordes de las imágenes */
+}
+
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.yeyouno button, .yeyodos button, .yeyotres button {
+    border: none;
+    outline: none;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.yeyouno button:hover, .yeyodos button:hover, .yeyotres button:hover {
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+    .yeyouno, .yeyodos, .yeyotres {
+        width: calc(100% - 20px); /* Ancho completo en pantallas pequeñas */
+        margin-right: 0;
+        height: auto; /* Altura automática para pantallas pequeñas */
+    }
+
+    .models {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yeyouno img, .yeyodos img, .yeyotres img {
+        height: 100%; /* Ajuste de altura al 100% para mantener el mismo tamaño */
+    }
+}
